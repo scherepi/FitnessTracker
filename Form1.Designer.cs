@@ -34,11 +34,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(447, 266);
+            this.label1.Location = new System.Drawing.Point(387, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to your Fitness Tracker!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
