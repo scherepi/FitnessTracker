@@ -34,9 +34,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.Location = new System.Drawing.Point(225, 35);
+            this.label1.Location = new System.Drawing.Point(254, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(618, 46);
             this.label1.TabIndex = 0;
