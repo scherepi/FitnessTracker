@@ -21,6 +21,7 @@ namespace FitnessTracker
             if (File.Exists(databaseName)) {
                 Console.WriteLine("Database valid!");  
             } else {
+                Console.WriteLine("Database missing, creating now.");
                 using (FileStream fs = new FileStream(databaseName, FileMode.Create)) {
                     using (StreamWriter sw = new StreamWriter(fs)) {
                         sw.WriteLine("DATABASE START");
