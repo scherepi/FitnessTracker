@@ -17,14 +17,11 @@ namespace FitnessTracker
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void createButton_click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Enabled = false;
         }
     }
 }
