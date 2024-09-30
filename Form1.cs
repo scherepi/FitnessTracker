@@ -20,8 +20,7 @@ namespace FitnessTracker
         private void createButton_click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
-            f3.Show();
-            this.Enabled = false;
+            f3.ShowDialog();
         }
     }
 }
