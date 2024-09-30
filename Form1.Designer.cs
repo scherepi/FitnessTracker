@@ -40,8 +40,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(618, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome to your Fitness Tracker!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 

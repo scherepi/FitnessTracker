@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +13,23 @@ namespace FitnessTracker
 {
     public partial class Form1 : Form
     {
+        private const String databaseName = "Test.data";
         public Form1()
         {
             InitializeComponent();
+            // Time to first check for our "database" file, and then create it if it's not there.
+            if (File.Exists(databaseName)) {
+                Console.WriteLine("Database valid!");  
+            } else {
+                using (FileStream fs = new FileStream(databaseName, FileMode.Create)) {
+                    using (StreamWriter sw = new StreamWriter(fs)) {
+                        sw.WriteLine("DATABASE START");
+                    }
+                }
+            }
+
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
