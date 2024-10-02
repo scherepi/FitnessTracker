@@ -57,8 +57,11 @@ namespace FitnessTracker
         }
         public void createAccount(string username, string password)
         {
+            // First, just add it to the current dictionary.
+            this.accounts.Add(username, password);
             // We can assume that the database exists, because everything was checked and set up when the form was initalized.
             // We would check here whether the account being created already exists, but we're actually gonna do that in our checkAccount method.
+            // We can assume when this function is called that all circumstances are correct for account creation.
             using (FileStream fs = new FileStream(databaseName, FileMode.Create))
             {
                 using (StreamWriter sw = new StreamWriter(fs))

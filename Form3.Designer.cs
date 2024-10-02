@@ -37,6 +37,7 @@
             this.createFrame = new System.Windows.Forms.GroupBox();
             this.emptyMessage = new System.Windows.Forms.Label();
             this.sorryMessage = new System.Windows.Forms.Label();
+            this.idMessage = new System.Windows.Forms.Label();
             this.createFrame.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +100,7 @@
             // 
             // createFrame
             // 
+            this.createFrame.Controls.Add(this.idMessage);
             this.createFrame.Controls.Add(this.submit_Btn);
             this.createFrame.Controls.Add(this.passField);
             this.createFrame.Controls.Add(this.userField);
@@ -127,6 +129,15 @@
             this.sorryMessage.Size = new System.Drawing.Size(211, 13);
             this.sorryMessage.TabIndex = 8;
             this.sorryMessage.Text = "Please try again without special characters!";
+            // 
+            // idMessage
+            // 
+            this.idMessage.AutoSize = true;
+            this.idMessage.Location = new System.Drawing.Point(219, 110);
+            this.idMessage.Name = "idMessage";
+            this.idMessage.Size = new System.Drawing.Size(140, 13);
+            this.idMessage.TabIndex = 9;
+            this.idMessage.Text = "That account already exists!";
             // 
             // Form3
             // 
@@ -158,5 +169,6 @@
         private System.Windows.Forms.GroupBox createFrame;
         private System.Windows.Forms.Label emptyMessage;
         private System.Windows.Forms.Label sorryMessage;
+        private System.Windows.Forms.Label idMessage;
     }
 }
