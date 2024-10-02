@@ -37,9 +37,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.label1.Location = new System.Drawing.Point(343, 74);
+            this.label1.Location = new System.Drawing.Point(344, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(312, 63);
             this.label1.TabIndex = 0;
@@ -50,9 +51,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(382, 205);
+            this.button1.Location = new System.Drawing.Point(375, 225);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 68);
+            this.button1.Size = new System.Drawing.Size(250, 75);
             this.button1.TabIndex = 1;
             this.button1.Text = "Exercises";
             this.button1.UseVisualStyleBackColor = false;
@@ -61,9 +62,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(382, 298);
+            this.button2.Location = new System.Drawing.Point(375, 325);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 68);
+            this.button2.Size = new System.Drawing.Size(250, 75);
             this.button2.TabIndex = 2;
             this.button2.Text = "Graph";
             this.button2.UseVisualStyleBackColor = false;
@@ -72,9 +73,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(382, 389);
+            this.button3.Location = new System.Drawing.Point(375, 425);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 68);
+            this.button3.Size = new System.Drawing.Size(250, 75);
             this.button3.TabIndex = 3;
             this.button3.Text = "Camera";
             this.button3.UseVisualStyleBackColor = false;
@@ -84,7 +85,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(75, 48);
+            this.label2.Location = new System.Drawing.Point(75, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 20);
             this.label2.TabIndex = 4;
@@ -95,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.ClientSize = new System.Drawing.Size(1040, 604);
+            this.ClientSize = new System.Drawing.Size(984, 611);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
