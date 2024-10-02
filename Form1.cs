@@ -52,7 +52,7 @@ namespace FitnessTracker
         private void createButton_Click(object sender, EventArgs e)
         {
             // Open the create account dialog when the button is clicked, and don't let the user interact with the main form until the process is complete.
-            Form3 f3 = new Form3();
+            Form3 f3 = new Form3(this);
             f3.ShowDialog();
         }
         public void createAccount(string username, string password)
