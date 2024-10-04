@@ -85,6 +85,7 @@
             this.submit_Btn.TabIndex = 5;
             this.submit_Btn.Text = "Start your fitness journey!";
             this.submit_Btn.UseVisualStyleBackColor = true;
+            this.submit_Btn.Click += new System.EventHandler(this.submit_Btn_Click);
             // 
             // passField
             // 

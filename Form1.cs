@@ -15,9 +15,12 @@ namespace FitnessTracker
     {
         private const String databaseName = "Test.data";
         private Dictionary<String, String> accounts = new Dictionary<String, String>();
+        public String signedInUser;
         public Form1()
         {
             InitializeComponent();
+            // Make certain that we don't have any lingering signed in users.
+            this.signedInUser = null;
             // Time to first check for our "database" file, and then create it if it's not there.
             if (File.Exists(databaseName)) {
                 Console.WriteLine("Database valid!");
@@ -75,6 +78,20 @@ namespace FitnessTracker
         {
             // literally just check whether the an entry already exists with that key.
             return this.accounts.ContainsKey(username);
+        }
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(this);
+            f2.ShowDialog();
+        }
+        private void signIn(string username, string password) {
+            if (accountExists(username)) {
+                if (this.accounts[username] == password)
+                {
+                    this.signedInUser = username;
+                }
+            }
         }
     }
 }
