@@ -24,7 +24,8 @@ namespace FitnessTracker
         {
             String usernameInput = this.userField.Text;
             String passwordInput = this.passField.Text;
-
+            if (!f1.signIn(usernameInput, passwordInput)) { incorrectMessage.Visible = true; return; }
+            this.Close();
         }
     }
 }

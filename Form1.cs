@@ -85,13 +85,18 @@ namespace FitnessTracker
             Form2 f2 = new Form2(this);
             f2.ShowDialog();
         }
-        private void signIn(string username, string password) {
+        public Boolean signIn(string username, string password) {
             if (accountExists(username)) {
                 if (this.accounts[username] == password)
                 {
                     this.signedInUser = username;
+                    LoggedIn newWindow = new LoggedIn(username);
+                    newWindow.Show();
+                    this.Hide();
+                    return true;
                 }
             }
+            return false;
         }
     }
 }
