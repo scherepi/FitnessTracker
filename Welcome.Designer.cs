@@ -29,25 +29,113 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<<< HEAD:Form1.Designer.cs
+            this.signInBtn = new System.Windows.Forms.Button();
+            this.createButton = new System.Windows.Forms.Button();
+========
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+>>>>>>>> mainPage:Welcome.Designer.cs
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(301, 149);
+<<<<<<<< HEAD:Form1.Designer.cs
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(321, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(924, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Welcome to your Fitness Tracker!";
+========
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.label1.Location = new System.Drawing.Point(344, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(312, 63);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome _!";
+>>>>>>>> mainPage:Welcome.Designer.cs
             // 
-            // Form4
+            // signInBtn
+            // 
+<<<<<<<< HEAD:Form1.Designer.cs
+            this.signInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signInBtn.Location = new System.Drawing.Point(597, 288);
+            this.signInBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.signInBtn.Name = "signInBtn";
+            this.signInBtn.Size = new System.Drawing.Size(342, 149);
+            this.signInBtn.TabIndex = 1;
+            this.signInBtn.Text = "SIGN IN";
+            this.signInBtn.UseVisualStyleBackColor = true;
+            this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
+========
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button1.Location = new System.Drawing.Point(375, 225);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 75);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "View Exercises";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(75, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Help and Feedback";
+>>>>>>>> mainPage:Welcome.Designer.cs
+            // 
+            // createButton
+            // 
+<<<<<<<< HEAD:Form1.Designer.cs
+            this.createButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createButton.Location = new System.Drawing.Point(384, 525);
+            this.createButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(783, 149);
+            this.createButton.TabIndex = 2;
+            this.createButton.Text = "CREATE ACCOUNT";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
+========
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button2.Location = new System.Drawing.Point(375, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(250, 75);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "New Exercises";
+            this.button2.UseVisualStyleBackColor = false;
+>>>>>>>> mainPage:Welcome.Designer.cs
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+<<<<<<<< HEAD:Form1.Designer.cs
+            this.ClientSize = new System.Drawing.Size(1560, 929);
+            this.Controls.Add(this.createButton);
+            this.Controls.Add(this.signInBtn);
+========
+            this.ClientSize = new System.Drawing.Size(984, 611);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+>>>>>>>> mainPage:Welcome.Designer.cs
             this.Controls.Add(this.label1);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "Form1";
+            this.Text = "Entry";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +144,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+<<<<<<<< HEAD:Form1.Designer.cs
+        private System.Windows.Forms.Button signInBtn;
+        private System.Windows.Forms.Button createButton;
+========
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+>>>>>>>> mainPage:Welcome.Designer.cs
     }
 }
+
