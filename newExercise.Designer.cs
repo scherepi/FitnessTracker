@@ -1,6 +1,6 @@
 ﻿namespace FitnessTracker
 {
-    partial class newExcerise
+    partial class newExercise
     {
         /// <summary>
         /// Required designer variable.
