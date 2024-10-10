@@ -1,6 +1,6 @@
 ﻿namespace FitnessTracker
 {
-    partial class Form4
+    partial class Welcome
     {
         /// <summary>
         /// Required designer variable.

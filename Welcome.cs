@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FitnessTracker
 {
-    public partial class Form4 : Form
+    public partial class Welcome : Form
     {
-        public Form4()
+        public Welcome()
         {
             InitializeComponent();
         }
